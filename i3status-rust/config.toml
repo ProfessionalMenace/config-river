@@ -1,0 +1,18 @@
+[icons]
+icons = "material-nf"
+
+[theme]
+theme = "solarized-dark"
+
+[[block]]
+block = "sound"
+step_width = 1
+
+[[block]]
+block = "net"
+format = "$icon {$signal_strength $ssid} "
+
+[[block]]
+block = "time"
+interval = 5
+format = " $timestamp.datetime(f:'%a %d/%m %R') "
