@@ -3,8 +3,9 @@
 # ProfessionalMenace River Configuration
 
 # Super+Shift+Return to start an instance of foot
-riverctl map normal Super Return spawn foot
+riverctl map normal Super Return spawn 'foot'
 riverctl map normal Super+Shift Return spawn 'rofi -show drun'
+riverctl map normal Super P spawn 'grim -g "$(slurp)" - | wl-copy'
 
 # Super+Q to close the focused view
 riverctl map normal Super Q close
@@ -128,3 +129,10 @@ riverctl rule-add -app-id "bar" csd
 # River will send the process group of the init executable SIGTERM on exit.
 riverctl default-layout rivertile
 rivertile -view-padding 6 -outer-padding 6 &
+
+#--------------------------------------------------------------------------------------
+# AUTOSTART
+#--------------------------------------------------------------------------------------
+
+systemctl --user start xdg-desktop-portal
+
