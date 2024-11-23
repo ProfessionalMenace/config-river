@@ -1,6 +1,6 @@
 command = "i3status-rs"
 
-## Dark Colors
+# Colors
 background      = "#282828"
 color           = "#9c8d74"
 separator       = "#9c8d74"
@@ -13,6 +13,7 @@ tag_urgent_bg   = "#1d2021"
 tag_inactive_fg = "#9c8d74"
 tag_inactive_bg = "#282828"
 
+# The font and various sizes
 font = "hack 10"
 height = 20
 margin_top = 0
@@ -21,11 +22,14 @@ margin_left = 0
 margin_right = 0
 separator_width = 1.0
 tags_r = 0.0
-tags_padding = 10.0
+tags_padding = 25.0
+tags_margin = 0.0
 blocks_r = 0.0
 blocks_overlap = 0.0
 
 position = "top"
+layer = "top"
 hide_inactive_tags = true
 invert_touchpad_scrolling = false
 show_layout_name = false
+
